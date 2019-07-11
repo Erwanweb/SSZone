@@ -116,11 +116,7 @@ class BasePlugin:
         else:
             Domoticz.Error("Error reading Mode5 parameters")
 
-        # if mode = off then make sure actual Alarm is off just in case if was manually set to on
-        if Devices[1].nValue == 0:
-            self.Alarm(False)
-
-
+        
     def onStop(self):
 
         Domoticz.Debugging(0)
