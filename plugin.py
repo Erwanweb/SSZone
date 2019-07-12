@@ -143,7 +143,7 @@ class BasePlugin:
                 self.Intrusion = False
                 self.Alarm = False
                 Devices[2].Update(nValue = 0,sValue = Devices[2].sValue)
-                Devices[3].Update(nValue = 0,sValue = Devices[3].sValue
+                Devices[3].Update(nValue = 0,sValue = Devices[3].sValue)
                 Devices[4].Update(nValue = 0,sValue = Devices[4].sValue)
 
 
