@@ -202,9 +202,9 @@ class BasePlugin:
             Devices[4].Update(nValue = 0,sValue = Devices[4].sValue)
             return
 
-        if self.Alarmtempo + timedelta(seconds = 20) >= now:
+        if self.Alarmtempo + timedelta(seconds = 5) >= now:
             self.NewDetection = True
-            Domoticz.Log("At mini 1 Alarm sensor is ON or Was ON in the past 20 seconds...")
+            Domoticz.Log("At mini 1 Alarm sensor is ON or Was ON in the past 5 seconds...")
         else:
             self.NewDetection = False
             Domoticz.Log("No Detection, All OK, No Alarm !")
